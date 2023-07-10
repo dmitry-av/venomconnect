@@ -2,3 +2,5 @@
 *.pyc
 *.log
 db.sqlite3
+seed.txt
+tempCodeRunnerFile.py
