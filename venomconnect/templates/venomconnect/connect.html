@@ -1,0 +1,37 @@
+<style>
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .separator {
+        margin-bottom: 30px;
+    }
+</style>
+
+<div class="center">
+    <form method="POST">
+        <h3>Выберите кошельки для подключения:</h3>
+        {% csrf_token %}
+        {% for wallet in wallets %}
+        <label>
+            <input type="checkbox" name="selected_wallets" value="{{ wallet.pk }}">
+            {{ wallet.name }}
+        </label>
+        <br>
+        {% endfor %}
+        <div class="separator"></div>
+        <label>
+            <input type="checkbox" name="use_proxies"> Использовать прокси
+        </label>
+        <br>
+        <button type="submit">Подключить кошельки</button>
+    </form>
+
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</div>

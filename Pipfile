@@ -7,6 +7,10 @@ name = "pypi"
 django = "*"
 selenium = "*"
 webdriver-manager = "*"
+celery = "*"
+redis = "*"
+django-celery-results = "*"
+gevent = "*"
 
 [dev-packages]
 
