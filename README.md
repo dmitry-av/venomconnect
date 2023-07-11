@@ -11,7 +11,11 @@ Selenium модуль для подключения кошелька в файл
 Установить зависимости через pipenv:  
 *pip install pipenv*  
 *pipenv install*  
- 
-Запустить Celery: *celery -A seleniumtrainee worker -l DEBUG --pool=gevent*
+
+Добавить в корень проекта .env файл с переменными (пример в .env.example)  
+
+Запустить Redis сервер  
+Запустить Celery: *celery -A seleniumtrainee worker -l DEBUG --pool=gevent*  
+
 
 
