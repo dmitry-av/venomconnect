@@ -2,17 +2,6 @@
 
 VenomConnect is a Django web application that allows users to connect their wallets to the Venom network. It provides an interface for users to select their wallets and optionally use proxies for the connection.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the App](#running-the-app)
-- [Usage](#usage)
-  - [Connecting Wallets](#connecting-wallets)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-
 ## Getting Started
 
 ### Prerequisites
